@@ -43,7 +43,7 @@ jobs:
           context: ./
           file: ./Dockerfile
           push: true
-          tags: ${{ secrets.DOCKER_HUB_USERNAME }}/githublendistry:latest
+          tags: ${{ secrets.DOCKER_HUB_USERNAME }}/githublendistry:demo
 
       - name: Image digest
         run: echo ${{ steps.docker_build.outputs.digest }}
